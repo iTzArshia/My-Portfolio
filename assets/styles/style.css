@@ -1203,6 +1203,32 @@ button:focus {
 }
 
 /* -----------------------------------------------------------------
+    - Skills Swiper
+----------------------------------------------------------------- */
+
+.js-carousel-skills {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.js-carousel-skills .swiper-slide {
+    text-align: center;
+}
+
+.js-carousel-skills .logo-client {
+    max-width: 80%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.js-carousel-skills .logo-client:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/* -----------------------------------------------------------------
     - Projects Swiper
 ----------------------------------------------------------------- */
 

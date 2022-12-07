@@ -41,6 +41,21 @@ $(document).ready(function () {
     }
 
     progressBar(); //Init
+   
+    /*-----------------------------------------------------------------
+      - Skills Swipper
+    -------------------------------------------------------------------*/
+
+    $('.js-carousel-skills').each(function () {
+        var clientCarousel = new Swiper('.js-carousel-skills', {
+            loop: true,
+            slidesPerView: 5,
+            grabCursor: true,
+            autoplay: {
+                delay: 1000,
+            },
+        });
+    });
 
     /*-----------------------------------------------------------------
       - Projects Swipper
