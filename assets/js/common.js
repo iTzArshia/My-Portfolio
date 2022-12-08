@@ -17,30 +17,6 @@ $(document).ready(function () {
         $('.js-show').toggle('slow');
         e.preventDefault();
     });
-
-    /*-----------------------------------------------------------------
-      - My Skills
-    -------------------------------------------------------------------*/
-
-    function progressBar() {
-        $('.progress').each(function () {
-            var ctrl = new ScrollMagic.Controller();
-            new ScrollMagic.Scene({
-                triggerElement: '.progress',
-                triggerHook: 'onEnter',
-                duration: 10000
-            })
-                .addTo(ctrl)
-                .on("enter", function (e) {
-                    var progressBar = $('.progress-bar span');
-                    progressBar.each(function (indx) {
-                        $(this).css({ 'width': $(this).attr('aria-valuenow') + '%', 'z-index': '2' });
-                    });
-                });
-        });
-    }
-
-    progressBar(); //Init
    
     /*-----------------------------------------------------------------
       - Skills Swipper
